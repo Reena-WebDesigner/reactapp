@@ -19,8 +19,14 @@ function ContactUs(props) {
   
 
   return (
-    <section className="container">
-      <fieldset>
+    <section className="container py_50">
+        <div className="d_flex space_btw">
+        <div className="flex_1">
+            <h1>Contact Us</h1>
+            <p>Need a design solution?<br />
+                Please fill out the form to contact with me or send me a email.</p>
+        </div>
+      <fieldset className="flex_1">
         <form>
           <p>
             <input
@@ -51,6 +57,7 @@ function ContactUs(props) {
           <p>Email = {inputValues.email}</p>
         </form>
       </fieldset>
+      </div>
     </section>
   );
 }
